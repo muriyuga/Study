@@ -1,0 +1,443 @@
+:root {
+  --primary: #f2be22;
+  --secondary: rgb(43, 51, 201);
+  --third: #f29727;
+  --fourd: #f24c3d;
+  --font: "Roboto", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background: #fff;
+  overflow: auto;
+  /* height: 4000px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar .brand {
+  font-family: var(--font);
+  font-size: 1.3rem;
+}
+
+.navbar .navbar-Item ul li {
+  list-style: none;
+}
+
+.navbar .navbar-Item ul li a {
+  padding: 0px 0.5rem;
+  font-family: var(--font);
+  color: #333;
+  font-size: 14px;
+}
+
+.navbar .navbar-action a {
+  color: #333;
+  padding: 0px 0.5rem;
+  font-family: var(--font);
+  font-size: 14px;
+}
+
+.navbar .navbar-action #register {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  border-radius: 7px 7px 0px 7px;
+  color: #fff;
+}
+
+.hero {
+  width: 100%;
+  height: 100svh;
+  padding: 0px 7%;
+  background-color: rgb(255, 251, 247);
+  display: flex;
+  align-items: center;
+}
+
+.hero .content {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem 0px;
+}
+
+.hero .content h2 {
+  font-size: 3.5rem;
+  font-family: var(--font);
+  font-weight: 600;
+}
+
+.hero .content p {
+  font-size: 15px;
+  font-family: var(--font);
+  padding: 1rem 0px;
+}
+
+.hero .content #start {
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  font-size: 14px;
+  border: none;
+  color: #fff;
+  font-family: var(--poppins);
+  border-radius: 15px 15px 15px 0px;
+  cursor: pointer;
+}
+
+.hero .content #instructor {
+  color: #333;
+  font-family: var(--font);
+  font-weight: 500;
+  padding: 0px 2rem;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.hero .image-content img {
+  max-width: 550px;
+  width: 90%;
+  height: auto;
+  position: relative;
+  top: 52px;
+  left: 75px;
+}
+
+.category {
+  width: 100%;
+  padding: 7rem 7%;
+  height: 100dvh;
+}
+
+.category #category-course {
+  text-align: center;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fourd);
+}
+
+.category h3 {
+  text-align: center;
+  padding: 1rem 0px;
+  font-size: 3rem;
+  font-family: var(--font);
+  color: #333;
+}
+
+.category .card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 2rem 0px;
+}
+
+.category .card .card-content {
+  max-width: 400px;
+  height: 100%;
+  background: #f9f9f9;
+  padding: 1rem 1rem;
+  border: 1px solid #e7e7e7;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.category .card .card-content img {
+  max-width: 50px;
+  width: 90%;
+}
+
+.category .card .card-content .text-content {
+  display: inline-block;
+}
+
+.category .card .card-content #tittle {
+  font-size: 1rem;
+  font-family: var(--font);
+  font-weight: 500;
+  padding: 0px 1rem;
+}
+
+.category .card .card-content #courses {
+  font-size: 14px;
+  font-family: var(--font);
+  font-weight: 400;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.popular {
+  width: 100%;
+  padding: 5rem 7%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.popular #popular-category {
+  text-align: center;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fourd);
+}
+
+.popular h3 {
+  text-align: center;
+  padding: 1rem 0px;
+  font-size: 3rem;
+  font-family: var(--font);
+  color: #333;
+}
+
+.popular .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 2rem 0px;
+  align-items: center;
+}
+
+.popular .cards .cards-content {
+  max-width: 400px;
+  height: 100%;
+  background: #f9f9f9;
+  padding: 1rem 1rem;
+  border: 1px solid #e7e7e7;
+  border-radius: 1rem;
+}
+
+.popular .cards .cards-content img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.popular .cards .cards-content .text-cards-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0px;
+  align-items: center;
+}
+
+.popular .cards .cards-content .text-cards-content #names {
+  font-size: 14px;
+  font-family: var(--font);
+  font-weight: 500;
+  color: #333;
+}
+
+.popular .cards .cards-content .text-cards-content span {
+  display: flex;
+  align-items: center;
+}
+
+.popular .cards .cards-content .text-cards-content span img {
+  display: inline-block;
+  max-width: 17px;
+  width: 100%;
+}
+
+.popular .cards .cards-content .text-cards-content #rate {
+  font-size: 14px;
+  font-family: var(--font);
+  font-weight: 500;
+  color: #333;
+}
+
+.popular .cards .content-popular h4 {
+  font-size: 1.3rem;
+  font-family: var(--font);
+  font-weight: 500;
+  color: #333;
+  padding-top: 0.5rem;
+}
+
+.popular .cards .content-popular p {
+  font-size: 0.8rem;
+  font-family: var(--font);
+  font-weight: 500;
+  color: #333;
+  padding: 0.5rem 0px;
+}
+
+.popular .cards .btn-cours {
+  display: inline-block;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background: var(--secondary);
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: var(--font);
+  margin-top: 1rem;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-center #load {
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  font-size: 14px;
+  border: none;
+  color: #fff;
+  font-family: var(--poppins);
+  border-radius: 15px 15px 15px 0px;
+  cursor: pointer;
+}
+
+.instructor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 5rem 7%;
+  align-items: center;
+  background-color: rgb(255, 251, 247);
+}
+
+.instructor .images-two img {
+  max-width: 1100px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: 80px;
+}
+
+.instructor .content-instructor p {
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fourd);
+}
+
+.instructor .content-instructor h3 {
+  padding: 1rem 0px;
+  font-size: 3rem;
+  font-family: var(--font);
+  color: #333;
+}
+
+.instructor .content-instructor #desc-path {
+  color: #333;
+  font-family: var(--font);
+}
+
+.instructor .content-instructor #load-more {
+  background-color: var(--secondary);
+  font-size: 14px;
+  border: none;
+  color: #fff;
+  font-family: var(--poppins);
+  border-radius: 15px 15px 15px 0px;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 7%;
+}
+
+.container .container-content {
+  display: flex;
+  width: 100%;
+  background: rgb(77, 77, 188);
+  height: 450px;
+  padding: 4rem 0px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .container-content .content-sec {
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.container .container-content .content-sec h3 {
+  padding: 1rem 0px;
+  font-size: 3rem;
+  font-family: var(--font);
+  color: #fff;
+}
+
+.container .container-content .content-sec .input-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container .container-content .content-sec .input-content input {
+  border: none;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 46px;
+}
+
+.container .container-content .content-sec .input-content a {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  padding: 12px 1rem;
+  background: rgb(75, 75, 211);
+  border-radius: 46px;
+  color: #fff;
+  font-family: var(--font);
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.footer {
+  padding: 2rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer h1 {
+  font-family: var(--font);
+  font-size: 1.3rem;
+}
+
+.footer .nav-footer a {
+  padding: 0px 0.5rem;
+  font-family: var(--font);
+  color: #333;
+  font-size: 14px;
+}
+
+#copyright {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--font);
+  font-weight: 400;
+}
