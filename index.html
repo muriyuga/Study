@@ -30,7 +30,7 @@
             <a href="#cours">Courses</a>
             <a href="/">Blog</a>
             <a href="/">Reviews</a>
-            <a href="/">Instruotor</a>
+            <a href="#instructur">Instruotor</a>
           </li>
         </ul>
       </nav>
@@ -39,6 +39,9 @@
         <a href="" id="sign-in">Sign In</a>
         <a href="" id="register">Register</a>
       </nav>
+      <span class="navbar-icons">
+        <button class="btn-menu" onclick="menu()"><i data-feather="menu"></i></button>
+      </span>
     </header>
     <!-- End Navbar -->
 
@@ -90,7 +93,7 @@
         <div class="card-content">
           <img src="./images/Engineer.svg" alt="Software">
           <span class="text-content">
-            <p id="tittle">Mobile App Development</p>
+            <p id="tittle">Software Engineering</p>
             <p id="courses">462 Courses</p>
           </span>
         </div>
@@ -98,7 +101,7 @@
         <div class="card-content">
           <img src="./images/Network.svg" alt="Network">
           <span class="text-content">
-            <p id="tittle">Mobile App Development</p>
+            <p id="tittle">Network Administration</p>
             <p id="courses">142 Courses</p>
           </span>
         </div>
@@ -106,7 +109,7 @@
         <div class="card-content">
           <img src="./images/Security.svg" alt="Security">
           <span class="text-content">
-            <p id="tittle">Mobile App Development</p>
+            <p id="tittle">Cybersecurity Essential</p>
             <p id="courses">350 Courses</p>
           </span>
         </div>
@@ -234,7 +237,7 @@
     <!-- End Section Popular Courses-->
 
     <!-- Section Instrutuctor -->
-    <section class="instructor">
+    <section class="instructor" id="instructur">
       <div class="images-two">
         <img src="./images/Image-two.png" alt="content two">
       </div>
@@ -285,6 +288,7 @@
     <p id="copyright">Copyright@2023 Muriyuga</p>
     <!-- End Footer -->
 
+    <script src="./js/index.js"></script>
     <script>
       feather.replace();
     </script>
